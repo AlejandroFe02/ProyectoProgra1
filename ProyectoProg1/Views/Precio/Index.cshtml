@@ -1,0 +1,65 @@
+﻿@model Ropa
+@{
+    ViewData["Title"] = "Calculos de Precios";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">ID Productos</label>
+</div>
+
+<div class="d-grid gap-2">
+    <button class="btn btn-primary" type="button" onclick="location.href='@Url.Action("Get", "Ropa")'>Buscar Producto</button>
+
+</div>
+
+
+
+
+
+
+<form method="post">
+
+    <div class="mb-3">
+        <label class="form-label">Codigo</label>
+        <input asp-for="Codigo" class="form-control" disabled>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input asp-for="Nombre" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Id Distribuidor</label>
+        <input asp-for="IdDistribuidor" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Marca</label>
+        <input asp-for="Marca" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Tipo</label>
+        <input asp-for="Tipo" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Stock</label>
+        <input asp-for="Stock" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Precio Docena</label>
+        <input asp-for="PrecioDocena" class="form-control">
+    </div>
+
+    <div class="row col-6">
+        <div class="col-6">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+        <div class="col-6">
+            <a asp-action="Index" class="btn btn-outline-primary">Regresar</a>
+        </div>
+
+    </div>
+</form>
+
+
+<p>En esta pagina se muestran los calculos de l
