@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LWv1y8uj6OZ/Vki+7itFHHYssZrUR9DgMRgX2rAxBFQMWH6SkDwWmbMapRWcTPxgSvkyX594XVaOJgv1stkMfw==",
+  "dgSpecHash": "3P6DiHsPL/rA2tDIW6nJL2DKSJxklBw7obMyHikj1VVjJkZNed3FbvSEB7+jjVrprvEd3lHPavGqjJvlAXswQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\source\\repos\\ProyectoProg1\\API-ProyectoProg1\\API-ProyectoProg1.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\Nando UDLA\\Programacion IV\\ProyectoProg1\\ProyectoProg1\\API-ProyectoProg1\\API-ProyectoProg1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

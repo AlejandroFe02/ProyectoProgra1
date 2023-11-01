@@ -9,81 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyectoProg1
 build_property.RootNamespace = ProyectoProg1
-build_property.ProjectDir = C:\Users\HP\source\repos\ProyectoProg1\ProyectoProg1\
+build_property.ProjectDir = C:\Users\HP\Desktop\Nando UDLA\Programacion IV\ProyectoProg1\ProyectoProg1\ProyectoProg1\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HP\source\repos\ProyectoProg1\ProyectoProg1
+build_property.MSBuildProjectDirectory = C:\Users\HP\Desktop\Nando UDLA\Programacion IV\ProyectoProg1\ProyectoProg1\ProyectoProg1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Distribuidor/Create.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Distribuidor/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVpZG9yXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Distribuidor/Details.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Distribuidor/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVpZG9yXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Distribuidor/Edit.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Distribuidor/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVpZG9yXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Distribuidor/Index.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Distribuidor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVpZG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Distribuidor/Pedido.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzdHJpYnVpZG9yXFBlZGlkby5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Home/Index.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Pedido/Index.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Pedido/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Pedido/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Pedido/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Pedido/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Precio/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlY2lvXERldGFpbHMuY3NodG1s
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Pedido/_Filtro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXF9GaWx0cm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Precio/Index.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Precio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlY2lvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Ropa/Create.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Ropa/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9wYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Ropa/Details.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Ropa/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9wYVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Ropa/Edit.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Ropa/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9wYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Ropa/Index.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Ropa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9wYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Shared/Error.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/_ViewImports.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/_ViewStart.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP/source/repos/ProyectoProg1/ProyectoProg1/Views/Shared/_Layout.cshtml]
+[C:/Users/HP/Desktop/Nando UDLA/Programacion IV/ProyectoProg1/ProyectoProg1/ProyectoProg1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-d14dfa76nr

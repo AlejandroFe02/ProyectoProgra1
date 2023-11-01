@@ -11,7 +11,7 @@ namespace API_ProyectoProg1.Data
 
         public DbSet<Ropa> Ropa { get; set; }
         public DbSet<Distribuidor> Distribuidor { get; set; }
-        public DbSet<Ropa> Pedido { get; set; }
+        public DbSet<Pedido> Pedido { get; set; }
 
 
 
@@ -23,6 +23,7 @@ namespace API_ProyectoProg1.Data
                 {
                     Codigo = "1234",
                     Nombre = "Calzoncillos 1",
+                    IdDistribuidor = 1234,
                     Marca = "Roland",
                     Tipo = "Ropa Interior",
                     Stock=12,
@@ -33,6 +34,7 @@ namespace API_ProyectoProg1.Data
                 {
                     Codigo = "4567RP",
                     Nombre = "Producto 2",
+                    IdDistribuidor = 4567,
                     Marca = "Marca 2",
                     Tipo = "Medias",
                     Stock = 4,
@@ -43,6 +45,7 @@ namespace API_ProyectoProg1.Data
                 {
                     Codigo = "7890RP",
                     Nombre = "Producto 3",
+                    IdDistribuidor = 7890,
                     Marca = "Marca 3",
                     Tipo = "Ropa Interior",
                     Stock = 10,
@@ -81,10 +84,19 @@ namespace API_ProyectoProg1.Data
                 }
                 );
 
-
+            modelBuilder.Entity<Pedido>().HasData(
+                new Pedido
+                {
+                    PedidoId = "70",
+                    Nombre = "Producto pedido",
+                    IdDistribuidor = 7890,
+                    Marca = "Marca 3",
+                    Tipo = "Ropa Interior",
+                    Stock = 1,
+                    PrecioDocena = 35,
+                    PrecioVentaUnid = 5.75
+                }
+                );
         }
-
-       
-
     }
 }
