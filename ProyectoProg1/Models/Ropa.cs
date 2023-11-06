@@ -18,9 +18,8 @@ namespace ProyectoProg1.Models
         public int Stock { get; set; }
         [Required(ErrorMessage = "Escribe el precio por docena del producto")]
 
-        public double PrecioDocena { get; set; }
+        public decimal PrecioDocena { get; set; }
         [Required(ErrorMessage = "Escribe el precio por unidad del producto")]
-        public double PrecioVentaUnid { get; set; }
-        
+        public decimal PrecioVentaUnid { get; set; }
     }
 }

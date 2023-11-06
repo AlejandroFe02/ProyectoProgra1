@@ -1,13 +1,13 @@
 ﻿@model List<Pedido>
 @{
-    ViewData["Title"] = "Lista de productos";
+    ViewData["Title"] = "Lista de Pedidos";
 }
 <h1>@ViewData["Title"]</h1>
-<button type="button" class="btn btn-success" onclick=" location.href='@Url.Action("Create", "Pedido")' ">Agregar un nuevo Productoa a la lista de pedido</button>
+<button type="button" class="btn btn-success" onclick=" location.href='@Url.Action("Create", "Pedido")' ">Agregar un nuevo Pedido</button>
 <p>Esta pagina muestra los productos</p>
 
 <table class="table">
-    <thead class="table-info">
+    <thead class="table-dark">
         <tr>
             <th scope="col">Ref</th>
             <th scope="col">Nombre</th>

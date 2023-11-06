@@ -47,26 +47,35 @@ namespace API_ProyectoProg1.Controllers
         {
             Ropa producto2 = await _db.Ropa.FirstOrDefaultAsync(x => x.Codigo == producto.Codigo);
 
+            
             if (producto2 == null && producto != null)
             {
-                if (producto.Stock < 0)
+                Distribuidor vendedor = await _db.Distribuidor.FirstOrDefaultAsync(x => x.IdDistribuidor == producto.IdDistribuidor);
+                if (vendedor == null)
                 {
-                    return BadRequest("Cantidad en Stock invalido");
+                    return BadRequest("No existe ese distribuidor");
                 }
                 else
                 {
-                    if (producto.PrecioDocena > 0)
+                    if (producto.Stock < 0)
                     {
-                        producto.PrecioVentaUnid = producto.PrecioDocena / 12;
+                        return BadRequest("Cantidad en Stock invalido");
                     }
                     else
                     {
-                        return BadRequest("Precio por docena invalido");
-                    }
-                    await _db.Ropa.AddAsync(producto);
-                    await _db.SaveChangesAsync();
-                    return Ok(producto);
+                        if (producto.PrecioDocena > 0)
+                        {
+                            producto.PrecioVentaUnid = producto.PrecioDocena / 12;
+                        }
+                        else
+                        {
+                            return BadRequest("Precio por docena invalido");
+                        }
+                        await _db.Ropa.AddAsync(producto);
+                        await _db.SaveChangesAsync();
+                        return Ok(producto);
 
+                    }
                 }
             }
 

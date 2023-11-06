@@ -21,13 +21,18 @@ namespace ProyectoProg1.Controllers
         public IActionResult Index()
         {
             List<Pedido> ListaProductos = new List<Pedido>();
-            HttpResponseMessage respone = _cliente.GetAsync(_cliente.BaseAddress + "/Ropa").Result;
+            HttpResponseMessage respone = _cliente.GetAsync(_cliente.BaseAddress + "/Pedido").Result;
             if (respone.IsSuccessStatusCode)
             {
                 string data = respone.Content.ReadAsStringAsync().Result;
                 ListaProductos = JsonConvert.DeserializeObject<List<Pedido>>(data);
             }
             return View(ListaProductos);
+        }
+
+        public IActionResult Filtro()
+        {
+            return View();
         }
 
         // GET: PedidoController/Details/5

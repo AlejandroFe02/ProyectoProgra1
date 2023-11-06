@@ -5,19 +5,27 @@ using System.Diagnostics;
 namespace ProyectoProg1.Controllers
 {
     public class HomeController : Controller
+
+
     {
         private readonly ILogger<HomeController> _logger;
 
-
+        Uri baseAddress = new Uri("http://localhost:5137/api");
+        private readonly HttpClient _cliente;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            _cliente = new HttpClient();
+            _cliente.BaseAddress = baseAddress;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            List<Pedido> pedidots = new List<Pedido>();
+            pedidots = await _cliente.GetFromJsonAsync<List<Pedido>>(_cliente.BaseAddress + "/Pedido");
+
+            return View(pedidots);
         }
 
         public IActionResult Edit()

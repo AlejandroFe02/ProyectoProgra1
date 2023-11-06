@@ -28,9 +28,9 @@ namespace API_ProyectoProg1.Controllers
 
         // GET api/<PedidoController>/5
         [HttpGet("{PedidoId}")]
-        public async Task<IActionResult> Get(string ID)
+        public async Task<IActionResult> Get(string PedidoId)
         {
-            Pedido pedido = await _db.Pedido.FirstOrDefaultAsync(p => p.PedidoId == ID);
+            Pedido pedido = await _db.Pedido.FirstOrDefaultAsync(p => p.PedidoId == PedidoId);
             if (pedido == null)
             {
                 return BadRequest("El pedido no existe");
@@ -45,24 +45,43 @@ namespace API_ProyectoProg1.Controllers
             Pedido pedido2 = await _db.Pedido.FirstOrDefaultAsync(x => x.PedidoId == pedido.PedidoId);
             if (pedido2 == null && pedido != null)
             {
-                if (pedido.Stock < 0)
+                Ropa verificar = await _db.Ropa.FirstOrDefaultAsync(x => x.Codigo == pedido.PedidoId);
+                if (verificar == null)
                 {
-                    return BadRequest("Cantidad en Stock invalido");
+                    return BadRequest("No existe ese distribuidor");
                 }
                 else
                 {
-                    if (pedido.PrecioDocena > 0)
+                    Distribuidor vendedor = await _db.Distribuidor.FirstOrDefaultAsync(x => x.IdDistribuidor == pedido.IdDistribuidor);
+                    if (vendedor == null)
                     {
-                        pedido.PrecioVentaUnid = pedido.PrecioDocena / 12;
+                        return BadRequest("No existe ese distribuidor");
                     }
                     else
                     {
-                        return BadRequest("Precio por docena invalido");
+
+                        if (pedido.Stock < 0)
+                        {
+                            return BadRequest("Cantidad en Stock invalido");
+                        }
+                        else
+                        {
+                            if (pedido.PrecioDocena > 0)
+                            {
+                                pedido.PrecioVentaUnid = pedido.PrecioDocena / 12;
+                            }
+                            else
+                            {
+                                return BadRequest("Precio por docena invalido");
+                            }
+                            await _db.Pedido.AddAsync(pedido);
+                            await _db.SaveChangesAsync();
+                            return Ok(pedido);
+                        }
                     }
-                    await _db.Pedido.AddAsync(pedido);
-                    await _db.SaveChangesAsync();
-                    return Ok(pedido);
+                        
                 }
+                
             }
             return BadRequest("La solicitud es inválida");
         }

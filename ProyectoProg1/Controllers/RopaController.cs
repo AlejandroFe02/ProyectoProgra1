@@ -80,5 +80,64 @@ namespace ProyectoProg1.Controllers
             HttpResponseMessage respone = _cliente.DeleteAsync(_cliente.BaseAddress + "/Ropa/" + Codigo).Result;
             return RedirectToAction("Index");
         }
+        public IActionResult Precio(string Codigo)
+        {
+            Ropa p;
+            HttpResponseMessage respone = _cliente.GetAsync(_cliente.BaseAddress + "/Ropa/" + Codigo).Result;
+            if (respone.IsSuccessStatusCode)
+            {
+                string data = respone.Content.ReadAsStringAsync().Result;
+                p = JsonConvert.DeserializeObject<Ropa>(data);
+                return View(p);
+
+            }
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public IActionResult CalcularPrecios(string codigo)
+        {
+            // Obtener el objeto Ropa según el código proporcionado
+            Ropa ropa = ObtenerRopaPorCodigo(codigo);
+
+            if (ropa == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            // Realizar los cálculos
+            decimal ivaPrecioDocena = ropa.PrecioDocena * 0.12m;
+            decimal precioDocenaMasIVA = ropa.PrecioDocena + ivaPrecioDocena;
+            decimal precioUnitarioMasIVA = ropa.PrecioVentaUnid + ivaPrecioDocena;
+            decimal precioUnitarioMas50Porciento = ropa.PrecioVentaUnid + (ropa.PrecioVentaUnid * 0.5m);
+            decimal precioUnitarioMas60Porciento = ropa.PrecioVentaUnid + (ropa.PrecioVentaUnid * 0.6m);
+            decimal precioVentaPublicoX350Porciento = (ropa.PrecioVentaUnid + (ropa.PrecioVentaUnid * 0.5m)) * 3;
+            decimal precioVentaPublicoX360Porciento = (ropa.PrecioVentaUnid + (ropa.PrecioVentaUnid * 0.6m)) * 3;
+
+            // Almacena los resultados en ViewBag
+            ViewBag.CalculosRealizados = true;
+            ViewBag.IvaPrecioDocena = ivaPrecioDocena;
+            ViewBag.PrecioDocenaMasIVA = precioDocenaMasIVA;
+            ViewBag.PrecioUnitarioMasIVA = precioUnitarioMasIVA;
+            ViewBag.PrecioUnitarioMas50Porciento = precioUnitarioMas50Porciento;
+            ViewBag.PrecioUnitarioMas60Porciento = precioUnitarioMas60Porciento;
+            ViewBag.PrecioVentaPublicoX350Porciento = precioVentaPublicoX350Porciento;
+            ViewBag.PrecioVentaPublicoX360Porciento = precioVentaPublicoX360Porciento;
+
+            // Redirige de vuelta a la vista de precios
+            return View("Precio", ropa); // Reemplaza "Precio" por el nombre real de tu vista de precios
+        }
+
+        private Ropa ObtenerRopaPorCodigo(string codigo)
+        {
+            HttpResponseMessage response = _cliente.GetAsync(_cliente.BaseAddress + "/Ropa/" + codigo).Result;
+            if (response.IsSuccessStatusCode)
+            {
+                string data = response.Content.ReadAsStringAsync().Result;
+                return JsonConvert.DeserializeObject<Ropa>(data);
+            }
+            return null;
+        }
+
+
     }
 }
